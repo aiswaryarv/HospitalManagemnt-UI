@@ -1,0 +1,12 @@
+/* Example CSS for grid and cells */
+kendo-grid {
+    border: 1px solid #ccc;
+    background-color: rgb(21, 124, 67);
+  }
+  
+  kendo-grid th, kendo-grid td {
+    border: 10px solid #ccc;
+    background-color: rgb(214, 108, 108); 
+  }
+  
+  /* Set the background color for grid cells */

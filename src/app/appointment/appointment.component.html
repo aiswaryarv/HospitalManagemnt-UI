@@ -61,6 +61,20 @@
           </button>
         </div>
       </form>
+      <div>
+        <h3>Hello</h3>
+       <kendo-grid [data]="gridData">
+          <kendo-grid-column field="productName" title="Product Name"></kendo-grid-column>
+          <kendo-grid-column field="category" title="Category"></kendo-grid-column>
+          <kendo-grid-column field="price" title="Price">
+            <ng-template kendoGridCellTemplate let-dataItem>
+              <div [style.background-color]="getBackgroundColor(dataItem.price)">
+                {{ dataItem.price }}
+              </div>
+            </ng-template>
+          </kendo-grid-column>
+        </kendo-grid>
+      </div>
     </div>
   </div>
   

@@ -13,12 +13,14 @@ import { MatInputModule } from '@angular/material/input'; // Example of importin
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {SessionComponent} from "./session/session.component";
+import { GridModule } from '@progress/kendo-angular-grid';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppointmentComponent
-    
+    AppointmentComponent,
+    SessionComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    GridModule
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]

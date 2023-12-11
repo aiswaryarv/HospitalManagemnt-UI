@@ -1,0 +1,30 @@
+
+
+<kendo-grid id="my-grid" [data]="gridData" [rowClass]="rowCallback">
+    <ng-template kendoGridCellTemplate let-dataItem>
+    <div [style.background-color]="getBackgroundColor(dataItem.productName)" style="border: 1px solid #642020;">
+            
+    <kendo-grid-column field="productName" title="Product Name">
+        <!--<ng-template kendoGridCellTemplate let-dataItem>
+            <div [style.background-color]="getBackgroundColor(dataItem.price)" style="border: 1px solid #642020;">
+              {{ dataItem.productName }}
+            </div>
+          </ng-template>-->
+    </kendo-grid-column>
+    <kendo-grid-column field="category" title="Category">
+        <ng-template kendoGridCellTemplate let-dataItem>
+            <div [style.background-color]="getBackgroundColor(dataItem.price)" style="border: 1px solid #642020;">
+              {{ dataItem.category }}
+            </div>
+          </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="price" title="Price">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <div [style.background-color]="getBackgroundColor(dataItem.price)" style="border: 1px solid #642020;">
+          {{ dataItem.price }}
+        </div>
+      </ng-template>
+    </kendo-grid-column>
+    </div>
+</ng-template>
+  </kendo-grid>
